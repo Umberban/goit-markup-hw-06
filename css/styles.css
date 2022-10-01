@@ -75,7 +75,7 @@ margin-right:93px;
 .logo-black{
 color:var(--main-color);
 }
-.title-white,.link-white,.logo-white,.button-color, .btn-portfolio:hover,
+.title-white,.link-white,.logo-white, .btn-portfolio:hover,
 .btn-portfolio:focus{
 color:var(--white-color);
 }
@@ -219,6 +219,42 @@ width: 100%;
 height: 100%;
 fill:var(--white-color);
 }
+.subscribe-form{
+display: flex;
+    gap: 12px;
+}
+.subscribe-section .brand-button{
+padding: 10px 28px;
+display: flex;
+align-items: center;
+font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height:1.875;
+    letter-spacing: 0.06em;
+}
+.subscribe-icon{
+margin-left:10px;
+}
+.subscribe-label{
+display:flex;
+flex-direction: column-reverse;
+}
+.subscribe-section .social-title{
+    margin-bottom:20px;
+}
+.subscribe-input{
+width: 358px;
+height:50px;
+padding:16px 15px;
+
+font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    background-color: inherit;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 4px;
+}
 /* formating footer  */
 .title-upper{
 text-transform: uppercase;
@@ -256,6 +292,7 @@ margin-right:auto;
 align-items: center;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 transition: background-color var(--animation-time) var(--timing-function);
+color:var(--white-color)
 }
 .hero-title{
 font-weight: 900;
@@ -594,7 +631,6 @@ fill:black;
 overflow:hidden;
 }
 .modal-form{
-     outline: 1px blue solid;
      padding:40px;
 
 }
@@ -654,17 +690,44 @@ padding:10px 52px;
     outline:none;
     border: 1px solid var(--brand-color);
 }
+.policy-label{
+display: flex;
+align-items: center;
+}
 .policy-text, .policy-ref{
     font-size: 14px;
         line-height: 1.71;
         letter-spacing: 0.03em;
+        padding-top: 2px;
 }
 .policy-ref{
 color:var(--brand-color);
 text-decoration-line:underline;
+margin-left: 7px;
+}
+.checkbox-icon{
+    display: block;
+    width: 16px;
+    height: 15px;
+    border:2px solid var(--main-color);
+    border-radius: 3px;
+    margin-right: 7px;
+    transition: background-color var(--animation-time) var(--timing-function) ,border-color var(--animation-time) var(--timing-function);
+}
+.modal-input input[type="checkbox"]:checked +.checkbox-icon{
+background-image: url(../images/icons/Vector.svg);
+background-color: var(--brand-color);
+border-color:var(--brand-color);
+border-radius: 3px ;
+background-repeat:no-repeat;
+background-position: center;
+background-origin: border-box;
 }
 .modal-input input[type="checkbox"]{
-opacity: 0;
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
+position: absolute;
 }
 .input-svg{
 position: relative;

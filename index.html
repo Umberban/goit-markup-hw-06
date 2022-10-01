@@ -81,7 +81,7 @@
         <h1 class="hero-title title-white title-upper">
           Ефективні рішення для вашого бізнесу
         </h1>
-        <button data-modal-open class="brand-button button-color" type="button">
+        <button data-modal-open class="brand-button" type="button">
           Замовити послугу
         </button>
       </section>
@@ -477,6 +477,22 @@
             </li>
           </ul>
         </div>
+        <div class="subscribe-section">
+          <h3 class="title-social title-upper">Підпишіться на розсилку</h3>
+          <form class="subscribe-form">
+            <label class="subscribe-label"
+              ><input
+                class="subscribe-input"
+                type="email"
+                placeholder="E-mail" /></label
+            ><button class="brand-button" type="sumbit">
+              Підпиcатися
+              <svg class="subscribe-icon" width="24px" height="24px">
+                <use href="./images/icons/symbol-defs.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
     <!-- modal window -->
@@ -543,16 +559,18 @@
                 placeholder="Введіть текст"
               ></textarea>
             </div>
-            <div>
-              <input type="checkbox" name="policy" id="policy" />
-              <label class="policy-text p-gray" for="policy"
-                >Погоджуюся з розсилкою та приймаю
-                <a class="policy-ref" href="">Умови договору</a></label
-              >
-            </div>
-            <button class="brand-button button-color" type="submit">
-              Відправити
-            </button>
+
+            <label class="policy-label p-gray" for="policy"
+              ><input type="checkbox" name="policy" id="policy" required />
+
+              <span class="checkbox-icon"> </span>
+              <span class="policy-text">
+                Погоджуюся з розсилкою та приймаю
+              </span>
+              <a class="policy-ref" href="">Умови договору</a></label
+            >
+
+            <button class="brand-button" type="submit">Відправити</button>
           </div>
         </form>
       </div>
